@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz-App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="main-container">
+        <div class="quiz-box start">
+            <div class="start-quiz">
+                <h2>Programming Fundamentals Quiz: Test Your Theoretical Knowledge!</h2>
+                <ul>
+                    <li><div style="font-size: 1.5em;">Instruction :</div><p class="li-p">Welcome to the Programming Fundamentals Quiz! <br>This quiz will evaluate your theoretical understanding of programming concepts. <br> You have only 100 seconds to answer 10 questions. Ready to begin?</p></li>
+                    <li><div style="font-size: 1.5em;">How to Play :</div><p class="li-p">Answer each question based on your knowledge of programming fundamentals. <br> Click one option and 'submit' it to move to the next question. <br> No coding required – focus on concepts and theories!</p></li>
+                    
+                </ul>
+                <div class="button">
+                    <button id="startBtn">Start</button>
+                </div>
+            </div>
+            <div class="end-quiz">
+                <h2 class="final-msg">Congratulation 🏆🏆 </h2>
+                <ul>
+                    <li><p>Total number of Questions : </p><span id="total_Questions">_</span></li>
+                    <li><p>Number of question you attempt : </p><span id="attempt">_</span></li>
+                    <li><p>Final score : </p><span id="result">_</span></li>
+                </ul>
+                <div class="button">
+                    <button id="retake">Try Again</button>
+                </div>
+            </div>
+            <div class="first">
+                <div>Question <span id="question_id"></span></div>
+                <div class="time" id="timer"></div>
+            </div>
+            <div class="second">
+                <p id="question">Can not able to fetch questions ⚠️</p>
+            </div>
+            <div class="third">
+                <div class="option">_</div>
+                <div class="option">_</div>
+                <div class="option">_</div>
+                <div class="option">_</div>
+            </div>
+            <div class="button">
+                <button type="submit" id="submit">Submit</button>
+            </div>
+        </div>
+    </div>
+    <script type="module" src="script.js"></script>
+</body>
+</html>
