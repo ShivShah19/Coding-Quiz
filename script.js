@@ -15,7 +15,7 @@ const quiz = {
 
     start() {
       quiz.startQuiz();
-      this.duration = 1; // Set the duration in seconds for second time quiz
+      this.duration = 100; // Set the duration in seconds for second time quiz
       this.intervalId = setInterval(() => {
         this.duration--;
 
