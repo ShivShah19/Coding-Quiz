@@ -124,8 +124,10 @@ document.querySelector("#retake").addEventListener("click", () => {
 
 function result() {
   document.getElementById("download").addEventListener("click", () => {
+    console.log("hello");
     const result = document.querySelector(".quiz-box");
-    //console.log(window);
+    console.log(result);
+    console.log(window);
     var opt = {
       margin: 1.5,
       filename: "Result.pdf",
