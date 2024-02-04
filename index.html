@@ -14,6 +14,7 @@
                 <ul>
                     <li><div style="font-size: 1.5em;">Instruction :</div><p class="li-p">Welcome to the Programming Fundamentals Quiz! <br>This quiz will evaluate your theoretical understanding of programming concepts. <br> You have only 100 seconds to answer 10 questions. Ready to begin?</p></li>
                     <li><div style="font-size: 1.5em;">How to Play :</div><p class="li-p">Answer each question based on your knowledge of programming fundamentals. <br> Click one option and 'submit' it to move to the next question. <br> No coding required – focus on concepts and theories!</p></li>
+                    <li><p class="li-p">NOTE : DO NOT REFRESH THE SITE ⚠️</p></li>
                     
                 </ul>
                 <div class="button">
@@ -21,7 +22,7 @@
                 </div>
             </div>
             <div class="end-quiz">
-                <h2 class="final-msg">Congratulation 🏆🏆 </h2>
+                <h2 class="final-msg">Result </h2>
                 <ul>
                     <li><p>Total number of Questions : </p><span id="total_Questions">_</span></li>
                     <li><p>Number of question you attempt : </p><span id="attempt">_</span></li>
@@ -29,6 +30,7 @@
                 </ul>
                 <div class="button">
                     <button id="retake">Try Again</button>
+                    <button id="download">Download</button>
                 </div>
             </div>
             <div class="first">
@@ -50,5 +52,6 @@
         </div>
     </div>
     <script type="module" src="script.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.2/html2pdf.bundle.js"></script>
 </body>
 </html>

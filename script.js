@@ -10,12 +10,12 @@ const quiz = {
   optionsContainer: document.querySelectorAll(".option"),
 
   timer: {
-    duration: 100, // Set the initial duration in seconds
+    // duration: 100, // Set the initial duration in seconds
     intervalId: null,
 
     start() {
       quiz.startQuiz();
-      this.duration = 100; // Set the duration in seconds for second time quiz
+      this.duration = 1; // Set the duration in seconds for second time quiz
       this.intervalId = setInterval(() => {
         this.duration--;
 
@@ -49,7 +49,7 @@ const quiz = {
   getQuestionIndex() {
     let index;
     do {
-      index = Math.floor(Math.random() * 11);
+      index = Math.floor(Math.random() * data.length);
     } while (this.questionIndex.includes(index));
 
     this.questionIndex.push(index);
@@ -105,6 +105,7 @@ const quiz = {
     } else {
       msg.innerHTML = "Try again ⚠️⚠️";
     }
+    result();
   },
 };
 
@@ -120,3 +121,20 @@ document.querySelector("#retake").addEventListener("click", () => {
   document.querySelector(".quiz-box").classList.remove("end");
   document.querySelector(".quiz-box").classList.add("start");
 });
+
+function result() {
+  document.getElementById("download").addEventListener("click", () => {
+    console.log("hello");
+    const invoice = document.querySelector(".quiz-box");
+    console.log(invoice);
+    console.log(window);
+    var opt = {
+      margin: 1.5,
+      filename: "Result.pdf",
+      image: { type: "jpeg", quality: 0.98 },
+      html2canvas: { scale: 1 },
+      jsPDF: { unit: "in", format: "letter", orientation: "landscape" },
+    };
+    html2pdf().from(invoice).set(opt).save();
+  });
+}
