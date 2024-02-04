@@ -41,7 +41,7 @@ Welcome to the Programming MCQ Quiz! This interactive quiz application allows us
 1. Clone the repository:
 
    ```bash
-   git clone [https://github.com/ShivShah19/Programming-Quiz.git](https://github.com/ShivShah19/Programming-Quiz.git)
+   git clone https://github.com/ShivShah19/Programming-Quiz.git
 
    cd Programming-Quiz
    ```
