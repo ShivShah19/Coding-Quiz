@@ -124,10 +124,8 @@ document.querySelector("#retake").addEventListener("click", () => {
 
 function result() {
   document.getElementById("download").addEventListener("click", () => {
-    console.log("hello");
-    const invoice = document.querySelector(".quiz-box");
-    console.log(invoice);
-    console.log(window);
+    const result = document.querySelector(".quiz-box");
+    //console.log(window);
     var opt = {
       margin: 1.5,
       filename: "Result.pdf",
@@ -135,6 +133,6 @@ function result() {
       html2canvas: { scale: 1 },
       jsPDF: { unit: "in", format: "letter", orientation: "landscape" },
     };
-    html2pdf().from(invoice).set(opt).save();
+    html2pdf().from(result).set(opt).save();
   });
 }
