@@ -10,12 +10,12 @@ const quiz = {
   optionsContainer: document.querySelectorAll(".option"),
 
   timer: {
-    // duration: 100, // Set the initial duration in seconds
+    // duration: 100,
     intervalId: null,
 
     start() {
       quiz.startQuiz();
-      this.duration = 100; // Set the duration in seconds for second time quiz
+      this.duration = 10;
       this.intervalId = setInterval(() => {
         this.duration--;
 
@@ -24,7 +24,7 @@ const quiz = {
 
         // console.log(this.duration);
         if (this.duration <= 0) {
-          this.stop(); // Reset the intervalId when the timer reaches zero
+          this.stop();
           quiz.finishQuiz();
         }
       }, 1000);
@@ -32,7 +32,7 @@ const quiz = {
 
     stop() {
       clearInterval(this.intervalId);
-      this.intervalId = null; // Reset the intervalId
+      this.intervalId = null;
     },
 
     formatTime(seconds) {
@@ -89,7 +89,6 @@ const quiz = {
   },
 
   finishQuiz() {
-    this.currentQuestion = 0;
     this.submitButton.removeEventListener("click", () => this.onSubmitClick());
     console.log("Quiz Finished. Score:", this.score);
     document.querySelector(".quiz-box").classList.add("end");
@@ -105,6 +104,10 @@ const quiz = {
     } else {
       msg.innerHTML = "Try again ⚠️⚠️";
     }
+
+    this.currentQuestion = 0;
+    this.attempt = 0;
+    this.score = 0;
     result();
   },
 };
@@ -124,7 +127,6 @@ document.querySelector("#retake").addEventListener("click", () => {
 
 function result() {
   document.getElementById("download").addEventListener("click", () => {
-    console.log("hello");
     const result = document.querySelector(".quiz-box");
     console.log(result);
     console.log(window);

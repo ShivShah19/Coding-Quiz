@@ -84,6 +84,32 @@ const data = [
     correct: "To find the shortest path in a weighted graph",
   },
   {
+    question: "In Python, what is the purpose of the `lambda` function?",
+    options: [
+      "To define a block of code",
+      "To create an anonymous function",
+      "To perform arithmetic operations",
+      "To declare a variable",
+    ],
+    correct: "To create an anonymous function",
+  },
+  {
+    question:
+      "Which of the following sorting algorithms has the worst time complexity?",
+    options: ["QuickSort", "MergeSort", "BubbleSort", "InsertionSort"],
+    correct: "BubbleSort",
+  },
+  {
+    question: "What is the purpose of the `super()` function in Python?",
+    options: [
+      "To call a superclass method",
+      "To create an instance of a class",
+      "To access a variable in the superclass",
+      "To initialize a subclass object",
+    ],
+    correct: "To call a superclass method",
+  },
+  {
     question:
       "What is the purpose of the 'merge' operation in the merge sort algorithm?",
     options: [
@@ -124,7 +150,7 @@ const data = [
       "Elements are processed in order of priority",
       "Constant time access",
     ],
-    correctAnswer: "Elements are processed in order of priority",
+    correct: "Elements are processed in order of priority",
   },
   {
     question:
@@ -134,9 +160,47 @@ const data = [
   },
   {
     question:
+      "Which of the following is a valid way to comment out a block of code in Python?",
+    options: [
+      "// This is a comment",
+      "# This is a comment",
+      "/* This is a comment */",
+      "-- This is a comment",
+    ],
+    correct: "# This is a comment",
+  },
+  {
+    question:
       "What is the time complexity of randomly accessing an element in an array?",
     options: ["O(1)", "O(log n)", "O(n)", "O(n^2)"],
     correct: "O(n)",
+  },
+  {
+    question: "In C, what is the purpose of the `malloc()` function?",
+    options: [
+      "To allocate memory for a new variable",
+      "To release allocated memory",
+      "To declare a constant",
+      "To initialize a variable",
+    ],
+    correct: "To allocate memory for a new variable",
+  },
+  {
+    question:
+      "What is the primary advantage of using a linked list over an array?",
+    options: [
+      "Constant time access to elements",
+      "Dynamic size",
+      "Cache locality",
+      "Contiguous memory allocation",
+    ],
+    correct: "Dynamic size",
+  },
+  {
+    question:
+      "In a binary search tree, which traversal would visit the nodes in ascending order?",
+    options: ["Preorder", "Inorder", "Postorder", "Level order"],
+    correct: "Inorder",
   },
   {
     question:
@@ -148,6 +212,38 @@ const data = [
       "Constant time access to any element",
     ],
     correct: "Bidirectional traversal",
+  },
+  {
+    question:
+      "What is the purpose of the `finally` block in a try-except statement?",
+    options: [
+      "To handle exceptions",
+      "To execute code regardless of whether an exception occurs or not",
+      "To define custom exceptions",
+      "To prevent exceptions from being raised",
+    ],
+    correct: "To execute code regardless of whether an exception occurs or not",
+  },
+  {
+    question:
+      "Which of the following is true about object-oriented programming (OOP)?",
+    options: [
+      "Encapsulation is the bundling of data with the methods that operate on the data.",
+      "Inheritance allows a class to inherit the properties and methods of another class.",
+      "Polymorphism refers to the ability of a function to work with objects of different types.",
+      "All of the above",
+    ],
+    correct: "All of the above",
+  },
+  {
+    question: "What is the primary purpose of dynamic programming?",
+    options: [
+      "Divide and conquer",
+      "Greedy algorithms",
+      "Optimizing recursive solutions",
+      "Randomized algorithms",
+    ],
+    correct: "Optimizing recursive solutions",
   },
   {
     question: "What is a base case in a recursive function?",
