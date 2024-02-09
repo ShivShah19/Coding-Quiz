@@ -15,7 +15,7 @@ const quiz = {
 
     start() {
       quiz.startQuiz();
-      this.duration = 10;
+      this.duration = 100;
       this.intervalId = setInterval(() => {
         this.duration--;
 
